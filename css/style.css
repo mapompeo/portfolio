@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --lightMode: #F2F2F2;
+    --darkMode: #333333;
+    --color: #5A98BF;
+    --padding: 8px;
+    --margin: 8px;
+    --border-radius: 16px;
+    --font-size: 8px;
+}
+
+* {
+    font-family: "Montserrat", sans-serif;
+    font-weight: normal;
+    color: var(--darkMode);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--lightMode);
+}
+
+header {
+    height: 10vh;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    border-radius: 100px;
+}
+
+.pages {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 4px 0px 24px rgba(87, 87, 87, 0.5);
+    border-radius: calc(2 * var(--border-radius));
+    width: 500px;
+    height: 64px;
+    padding: 0;
+    margin: calc(3 * var(--margin));
+    background-color: rgba(255, 255, 255, 0.5);
+    -webkit-backdrop-filter: blur(20px) saturate(100%) brightness(100%) contrast(100%);
+    backdrop-filter: blur(20px) saturate(100%) brightness(100%) contrast(100%);
+
+}
+
+.pages li a {
+    font-size: calc(2 * var(--font-size));
+    font-weight: bold;
+    text-decoration: none;
+    padding: var(--padding);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    z-index: 2;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+}
+
+.container-left {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container-left-text h1 {
+    font-size: calc(12 * var(--font-size));
+    margin: 0;
+}
+
+.container-left-text h2 {
+    font-size: calc(8 * var(--font-size));
+    margin: 0;
+}
+
+.container-left-text h3 {
+    font-size: calc(5 * var(--font-size));
+    margin: 0;
+}
+
+.bolder {
+    font-weight: bold;
+}
+
+.links {
+    transition: all ease-in-out 0.3s;
+    width: 40px;
+    margin: var(--margin);
+    margin-left: 0;
+}
+
+.links:hover {
+    transition: all ease-in-out 0.3s;
+    transform: scale(1.1);
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    background-color: var(--darkMode);
+}
